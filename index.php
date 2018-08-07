@@ -33,8 +33,15 @@
 	//var_dump($aluno);
 
 //Metódo Update
+//	$usuario = new Usuario;
+//	$usuario->loadbyId(4);
+//	$usuario->update("thiagoifma", "123456");
+//	echo $usuario;
+
+	//Deletando usuario
 	$usuario = new Usuario;
-	$usuario->loadbyId(4);
-	$usuario->update("thiagoifma", "123456");
+	$usuario->loadbyId(6);
+	$usuario->delete();
 	echo $usuario;
+
 ?>
