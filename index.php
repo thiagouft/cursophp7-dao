@@ -27,8 +27,14 @@
 //	echo $usuario;	
 
 	//Inset de um usuario novo
-	$aluno = new Usuario("aluno", "@luno");
-	$aluno->insert();
-	echo $aluno;
+//	$aluno = new Usuario("aluno", "@luno");
+//	$aluno->insert();
+//	echo $aluno;
 	//var_dump($aluno);
+
+//Metódo Update
+	$usuario = new Usuario;
+	$usuario->loadbyId(4);
+	$usuario->update("thiagoifma", "123456");
+	echo $usuario;
 ?>
